@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TomTTFB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@32,400,0,0&icon_names=folder,link_2,arrow_back"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+    <div class="projectdiv">
+
+        <div class="pageheader">
+            <h1>Projects</h1>
+
+            <button class="backbutton" onclick="window.location.href='index.html'">
+                <span class="material-symbols-outlined">arrow_back</span>
+                Back
+            </button>
+        </div>
+        
+
+        <div class="project-grid">
+
+            <a class="project-card" href="https://github.com/tomTTFB/homelab">
+                <img src="images/server-rack.png" alt="...">
+                <h3>Homelab</h3>
+                <p>My server rack that contains my servers and NAS</p>
+            </a>
+
+            <a class="project-card" href="https://github.com/tomTTFB/token">
+                <img src="images/token.png" alt="...">
+                <h3>Token</h3>
+                <p>A hardware TOTP Authenticator made for the LilyGo T-Embed CC1101</p>
+            </a>
+
+            <a class="project-card" href="https://github.com/tomTTFB/pirate-game-scw">
+                <img src="images/scwpng.png" alt="...">
+                <h3>Pirate Game SCW</h3>
+                <p>A pirate themed text-based adventure game coded in 3 hours 20 mins for skills competition wales.</p>
+            </a>
+
+            <a class="project-card" href="...">
+                <img src="images/question.png"  alt="...">
+                <h3>Future Project</h3>
+                <p>Still compiling...</p>
+            </a>
+
+            <a class="project-card" href="...">
+                <img src="images/question.png"  alt="...">
+                <h3>Future Project</h3>
+                <p>Still compiling...</p>
+            </a>
+
+            <a class="project-card" href="...">
+                <img src="images/question.png" alt="...">
+                <h3>Future Project</h3>
+                <p>Still compiling...</p>
+            </a>
+
+        </div>
+    </div>
+
+    <canvas id="ripples"></canvas>
+    <script src="ripples.js"></script>
+    <script src="scramble.js"></script>
+    
+</body>
+</html>
