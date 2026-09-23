@@ -6,7 +6,7 @@ My personal site for Hack Club Pixl, it shows who I am, some of my projects and 
 
 A personal portfolio site built with plain HTML, CSS and JavaScript. It has three pages, a home page, a projects page and a links page with my GitHub, LinkedIn and TryHackMe.
 
-It also includes a ripple mouse trail effect drawn on a canvas and a text-unscrambling effect on page load.
+It also includes a ripple mouse trail effect drawn on a canvas and a text-unscrambling effect on page load, both made using javascript (and some css for the ripple trail)
 
 The site is self-hosted on my Homelab, served by an nginx Docker container behind Nginx Proxy Manager and Cloudflare.
 
@@ -23,6 +23,36 @@ Visit it at https://tomttfb.com
 ![Home page](images/home.png)
 
 ## Getting Started
+
+## Self-Hosting
+
+idk why you would want to host your own version of my site but you can:
+
+```
+git clone https://github.com/tomTTFB/personal-site.git
+cd personal-site
+```
+
+Create a `docker-compose.yml`:
+
+```yaml
+services:
+  site:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./site:/usr/share/nginx/html:ro
+    restart: unless-stopped
+```
+
+Then start it:
+
+```
+docker compose up -d
+```
+
+The site will be at `http://server-ip:8080`. To use a domain, point a reverse proxy like Nginx Proxy Manager at port 8080 and add a DNS record for it on Cloudflare.
 
 ### Dependencies
 
