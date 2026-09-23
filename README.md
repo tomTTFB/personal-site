@@ -10,6 +10,12 @@ It also includes a ripple mouse trail effect drawn on a canvas and a text-unscra
 
 The site is self-hosted on my Homelab, served by an nginx Docker container behind Nginx Proxy Manager and Cloudflare.
 
+Rather than using a hosting service, I made the site runs on my own Homelab. It's served by an nginx Docker container, with Nginx Proxy Manager handling the reverse proxy and SSL, and Cloudflare in front for DNS and caching:
+
+```
+Visitor → Cloudflare → Nginx Proxy Manager → nginx container → site files
+```
+
 Visit it at https://tomttfb.com
 
 ### Screenshots
