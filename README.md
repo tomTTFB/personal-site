@@ -14,7 +14,7 @@ Visit it at https://tomttfb.com
 
 ### Screenshots
 
-![Home page](screenshots/home.png)
+![Home page](images/home.png)
 
 ## Getting Started
 
