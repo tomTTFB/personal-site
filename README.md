@@ -1,6 +1,6 @@
-# TomTTFB Personal Site
+# My Personal Site
 
-My personal site for Hack Club Pixl, it shows who I am, some of my projects and my contact links.
+My personal site for Hack Club Crescent, it shows who I am, some of my projects and my contact links.
 
 ## Description
 
