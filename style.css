@@ -183,6 +183,26 @@ body {
   transform: translateY(-2px);
 }
 
+.writeupbutton {
+  color: rgb(0, 0, 0);
+  font-family: Inter, Helvetica, sans-serif;
+  height: 50px;
+  width: 100%;
+  text-align: left;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.writeupbutton {
+  transition: transform 0.15s ease;
+}
+
+.writeupbutton:hover {
+  transform: translateY(-2px);
+}
+
 /* Links Page CSS */
 
 .linkbutton-2 {
@@ -237,4 +257,100 @@ body {
     height:100%;
     pointer-events: none;
     z-index: -1;
+}
+
+/* Writeups CSS */
+
+.writeupdiv {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.writeup-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.writeupcard {
+  display: block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 8px;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+  font-family: Inter, Helvetica, sans-serif;
+  padding: 18px;
+}
+
+.writeup-top {
+  justify-content: space-between;
+  display: flex;
+  align-items: baseline;
+}
+
+.writeupcard p {
+  margin: 0 0 0;
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+}
+
+.writeupcard time { 
+  color: rgba(255,255,255,0.5);
+  font-size: 14px;
+}
+
+.tags {
+  display: flex;
+  padding-top: 8px;
+}
+
+.tag {
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-size: 12px;
+}
+
+.writeupcard h3 {
+  margin: 0 0 4px;
+}
+
+.writeupcard:hover {
+  transform: translateY(-2px);
+  border-color: white;
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
+}
+
+/* actual Writeups CSS */
+
+.writeup {
+  width: 100%;
+  max-width: 80ch;
+  margin: 0 auto;
+  padding: 32px 24px 96px;
+  box-sizing: border-box;
+  color: white;
+  font-family: Inter, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.writeup h1 {
+  margin-top: 24px;
+  line-height: 1.2;
+}
+
+.writeup time {
+  color: rgba(255,255,255,0.5);
+  font-size: 14px;
+}
+
+.writeup .tags {
+  margin-bottom: 24px;
 }
