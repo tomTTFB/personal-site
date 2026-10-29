@@ -354,3 +354,61 @@ body {
 .writeup .tags {
   margin-bottom: 24px;
 }
+
+/* Crescent Button CSS */
+
+.crescentbutton {
+  display: flex;
+  align-items: center;
+  margin-top: 36px;
+  gap: 8px;
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 8px;
+  background: #5f34b0;
+  color: #f4ecd8;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.35);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* Crescent Button stars */
+.crescentbutton::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 12% 25%, #f4ecd8 1px, transparent 1.5px),
+    radial-gradient(circle at 30% 60%, #f4ecd8 1px, transparent 1.5px),
+    radial-gradient(circle at 48% 18%, #f4ecd8 1px, transparent 1.5px),
+    radial-gradient(circle at 70% 15%, #f4ecd8 1px, transparent 1.5px),
+    radial-gradient(circle at 85% 22%, #f4ecd8 1px, transparent 1.5px),
+    radial-gradient(circle at 92% 55%, #f4ecd8 1px, transparent 1.5px),
+    radial-gradient(circle at 22% 40%, #f4ecd8 1px, transparent 1.5px);
+  animation: cb-twinkle 3s ease-in-out infinite alternate;
+}
+
+/* Crescent Button stars */
+.crescentbutton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse 30% 45% at 10% 115%, #8a46bd 98%, transparent 100%),
+    radial-gradient(ellipse 35% 50% at 55% 125%, #8a46bd 98%, transparent 100%),
+    radial-gradient(ellipse 40% 60% at 30% 120%, #4a2a94 98%, transparent 100%),
+    radial-gradient(ellipse 40% 60% at 85% 125%, #4a2a94 98%, transparent 100%);
+  background-size: 200px 100%;
+  background-repeat: repeat-x;
+  animation: cb-drift 14s linear infinite;
+}
