@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TomTTFB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@32,400,0,0&icon_names=arrow_back"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+    <div class="writeupdiv">
+
+        <div class="pageheader">
+            <h1>Achievements</h1>
+
+            <button class="backbutton" onclick="window.location.href='index.html'">
+                <span class="material-symbols-outlined">arrow_back</span>
+                Back
+            </button>
+        </div>
+        
+        <div class="writeup-list">
+
+            <a class="writeupcard">
+                <div class="writeup-top">
+                    <h3>Worldskills UK Cyber Security: National Finalist</h3>
+                    <time datetime="2026-10-08">2026</time>
+                </div>
+                <p>Qualified for the UK national final in Cyber Security.</p>
+                <div class="tags">
+                    <span class="tag">Competition</span>
+                </div>
+            </a>
+
+            <a class="writeupcard">
+                <div class="writeup-top">
+                    <h3>Skills Comp Wales: Highly Commended</h3>
+                    <time datetime="2026-10-08">2026</time>
+                </div>
+                <p>Achieved Highly Commended for coding a pirate-themed text-based adventure game in 3h 20m.</p>
+                <div class="tags">
+                    <span class="tag">Competition</span>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+    <canvas id="ripples"></canvas>
+    <script src="ripples.js"></script>
+    <script src="scramble.js"></script>
+    
+</body>
+</html>
