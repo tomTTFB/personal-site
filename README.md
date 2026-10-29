@@ -64,6 +64,10 @@ The site will be at `http://server-ip:8080`. To use a domain, point a reverse pr
 - If the effects don't show, check JavaScript is enabled
 - If the page looks outdated, do a hard refresh (Ctrl + Shift + R) since Cloudflare may be serving a cached version
 
+## AI Usage
+
+AI was used in this project for help with CSS
+
 ## License
 
 This project is licensed under the MIT License
